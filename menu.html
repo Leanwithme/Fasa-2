@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Pesanan</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">Sponge bob</div>
+            <nav>
+                <ul>
+                    <li><a href="maklumat.html">MAKLUMAT RESTORAN</a></li>
+                    <li><a href="menu.html">MENU PESANAN</a></li>
+                    <li><a href="laporan.html">LAPORAN PESANAN</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="menu-section">
+        <h1>MENU PESANAN</h1>
+        <div class="menu">
+            <div class="menu-item">
+                <img src="miso-ramen.jpg" alt="Miso Ramen">
+                <div class="item-details">
+                    <h2>Miso Ramen</h2>
+                    <p>HARGA: RM10.60</p>
+                    <div class="quantity">
+                        <button onclick="decreaseQuantity('miso')">-</button>
+                        <span id="miso-qty">1</span>
+                        <button onclick="increaseQuantity('miso')">+</button>
+                    </div>
+                    <button class="order-btn">Order</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="chicken-teriyaki.jpg" alt="Teriyaki Chicken">
+                <div class="item-details">
+                    <h2>Teriyaki Chicken</h2>
+                    <p>HARGA: RM12.40</p>
+                    <div class="quantity">
+                        <button onclick="decreaseQuantity('teriyaki')">-</button>
+                        <span id="teriyaki-qty">1</span>
+                        <button onclick="increaseQuantity('teriyaki')">+</button>
+                    </div>
+                    <button class="order-btn">Order</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="mocha-tea.webp" alt="Mocha Tea"> 
+                <div class="item-details">
+                    <h2>Mocha Tea</h2>
+                    <p>HARGA: RM2.50</p>
+                    <div class="quantity">
+                        <button onclick="decreaseQuantity('mocha')">-</button>
+                        <span id="mocha-qty">1</span>
+                        <button onclick="increaseQuantity('mocha')">+</button>
+                    </div>
+                    <button class="order-btn">Order</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('nicebackground.jpg');
+    background-size: cover;
+    color: rgb(7, 7, 7);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(255, 254, 255);
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.menu-section {
+    text-align: center;
+    padding: 50px 0;
+    color:black
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: left;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.item-details h2 {
+    margin: 10px 0;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.order-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+}
